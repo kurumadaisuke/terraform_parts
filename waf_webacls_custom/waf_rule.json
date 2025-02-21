@@ -1,0 +1,45 @@
+[
+  {
+    "Name": "AWS-AWSManagedRulesBotControlRuleSet",
+    "Priority": 0,
+    "Statement": {
+      "ManagedRuleGroupStatement": {
+        "VendorName": "AWS",
+        "Name": "AWSManagedRulesBotControlRuleSet",
+        "ManagedRuleGroupConfigs": [
+          {
+            "AWSManagedRulesBotControlRuleSet": {
+              "InspectionLevel": "COMMON"
+            }
+          }
+        ]
+      }
+    },
+    "OverrideAction": {
+      "Count": {}
+    },
+    "VisibilityConfig": {
+      "SampledRequestsEnabled": true,
+      "CloudWatchMetricsEnabled": true,
+      "MetricName": "AWS-AWSManagedRulesBotControlRuleSet"
+    }
+  },
+  {
+    "Name": "AWS-AWSManagedRulesKnownBadInputsRuleSet",
+    "Priority": 1,
+    "Statement": {
+      "ManagedRuleGroupStatement": {
+        "VendorName": "AWS",
+        "Name": "AWSManagedRulesKnownBadInputsRuleSet"
+      }
+    },
+    "OverrideAction": {
+      "Count": {}
+    },
+    "VisibilityConfig": {
+      "SampledRequestsEnabled": true,
+      "CloudWatchMetricsEnabled": true,
+      "MetricName": "AWS-AWSManagedRulesKnownBadInputsRuleSet"
+    }
+  }
+]
